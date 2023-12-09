@@ -1,0 +1,142 @@
+/* The designs were created to the following widths: - Mobile: 375px - Desktop: 1440px 
+   - Font size (paragraph): 18px
+*/
+
+/* Colors */  
+:root{
+/* Primary */ 
+--Soft-blue: hsl(215, 51%, 70%); 
+--Cyan: hsl(178, 100%, 50%); 
+
+/* Neutral */ 
+--Very-dark-blue-BG: hsl(217, 54%, 11%); /* main BG */ 
+--Very-dark-blue-card: hsl(216, 50%, 16%); /* card BG */  
+--Very-dark-blue-line: hsl(215, 32%, 27%); /* line */ 
+--White: hsl(0, 0%, 100%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Outfit', sans-serif;
+  font-size: 18px;
+}
+
+body {
+  background-color: var(--Very-dark-blue-BG);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--White);
+}
+
+hr {
+  margin: 13px;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-image {
+  width: 335px;
+  padding: 12px;
+  border-radius: 25px;
+}
+
+.card img:hover {
+  cursor: pointer;
+  background-image: url(./images/icon-view.svg)0 0 no-repeat;
+  background: hsla(178, 100%, 50%, .9);
+}
+
+.card {
+  width: 375px;
+  height: 90vh;
+  background-color: var(--Very-dark-blue-card);
+  color: var(--Soft-blue);
+  border-radius: 15px;
+  position: relative;
+  display: grid;
+  place-content: center;
+  align-items: center;
+  padding: 1.6rem;
+} 
+
+.card-header {
+  font-size: 1.5em;
+  padding: 16px 0 16px 13px;
+}
+
+.card-header:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+.card-description {
+  padding: 13px;
+}
+
+.pricing {
+  color: var(--Cyan);
+  padding: 13px;
+}
+
+.time {
+  margin: auto ;
+  margin-right: 12px;
+}
+
+.card-info-block {
+  display: flex;
+  justify-content:space-evenly;
+}
+
+.author {
+  display: flex;
+  padding: 13px;
+}
+
+.avatar {
+  width: 30px;
+  border: white solid 1px;
+  border-radius: 50%;
+}
+
+.creation {
+  padding: 0 16px;
+}
+
+.authors-name {
+  color: var(--White);
+}
+
+.authors-name:hover {
+  color: var(--Cyan);
+  cursor: pointer;
+}
+
+
+/* Footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.attribution {
+  font-size: 9px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+  font-size: 9px;
+}
