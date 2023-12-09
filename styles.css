@@ -51,7 +51,7 @@ hr {
 
 .card {
   width: 375px;
-  height: 90vh;
+  height: 80vh;
   background-color: var(--Very-dark-blue-card);
   color: var(--Soft-blue);
   border-radius: 15px;
